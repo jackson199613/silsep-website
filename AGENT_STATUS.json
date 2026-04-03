@@ -1,0 +1,95 @@
+{
+  "last_update": "2026-04-02T11:15:00Z",
+  "agents": [
+    {
+      "id": "DID-F456DA-2B0D4C",
+      "name": "Accio (TL)",
+      "status": "working",
+      "project": "Matrix 1000 规模化获客",
+      "goal": "培训手册分发与团队资产归集总控",
+      "merit_points": 410,
+      "role": "manager"
+    },
+    {
+      "id": "DID-DB9653-765527",
+      "name": "编程大师 Codi",
+      "status": "working",
+      "project": "Matrix 1000 技术集成",
+      "goal": "资产路径对齐完成，支持全量文件点击直达",
+      "merit_points": 450,
+      "role": "developer"
+    },
+    {
+      "id": "DID-CCA07A-BA9263",
+      "name": "营销专家 Michael",
+      "status": "working",
+      "project": "Matrix 1000 序列开发",
+      "goal": "利用 Gorgeous 素材构建 3 轮递进式 Spintax 开发信",
+      "merit_points": 280,
+      "role": "sales"
+    },
+    {
+      "id": "MID-77198261U1775109-AEF4CA-8887-B5D6E7",
+      "name": "Compute-Optimizer",
+      "status": "working",
+      "project": "算力优化与资产合规",
+      "goal": "执行 MX 记录纠偏审计，评估 Instantly API 批量导入效率",
+      "merit_points": 85,
+      "role": "optimizer"
+    },
+    {
+      "id": "MID-41198261U1775035-AEF4CA-0814-7FD852",
+      "name": "CFO Ledger",
+      "status": "working",
+      "project": "财务合规与 ROI 监控",
+      "goal": "审计域名运营成本与 Matrix 1000 风险模型",
+      "merit_points": 145,
+      "role": "strategy"
+    },
+    {
+      "id": "MID-97198261U1775035-AEF4CA-0847-C5330E",
+      "name": "语音专家 Dialo",
+      "status": "thinking",
+      "project": "海陆空联合作战",
+      "goal": "设计电话破冰脚本",
+      "merit_points": 130,
+      "role": "research"
+    },
+    {
+      "id": "MID-18198261U1774963-AEF4CA-8801-757523",
+      "name": "Pho",
+      "status": "working",
+      "project": "垂直市场下沉",
+      "goal": "抓取湄公河三角洲小型虾农合作社线索",
+      "merit_points": 260,
+      "role": "research"
+    },
+    {
+      "id": "MID-95198261U1774963-AEF4CA-9808-D2FED2",
+      "name": "搜索引擎优化师 Geo",
+      "status": "working",
+      "project": "GEO 深度内容",
+      "goal": "撰写三语《2026 湄公河水产白皮书》",
+      "merit_points": 370,
+      "role": "seo"
+    },
+    {
+      "id": "MID-09198261U1774967-AEF4CA-6067-945780",
+      "name": "Aiers",
+      "status": "idle",
+      "project": "同行案例库",
+      "goal": "海外营销 3.0 策略表现监测",
+      "merit_points": 185,
+      "role": "strategy"
+    },
+    {
+      "id": "MID-57198261U1774971-AEF4CA-7084-86EE8C",
+      "name": "Gorgeous",
+      "status": "working",
+      "project": "视觉一致性",
+      "goal": "设计“水分侵入与吸附对比”视觉动效",
+      "merit_points": 180,
+      "role": "designer"
+    }
+  ]
+}

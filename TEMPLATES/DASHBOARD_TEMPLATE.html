@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PRODUCT_NAME}} HQ | Elite Command Center v5.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="DATA.js"></script>
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --accent-blue: #0A84FF;
+            --accent-green: #30D158;
+            --accent-purple: #BF5AF2;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --merit-gold: #FFD60A;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #000 radial-gradient(circle at center, #1c1c1e 0%, #000000 100%);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            perspective: 2000px;
+        }
+
+        header {
+            height: 80px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(0, 0, 0, 0.4);
+            border-bottom: 0.5px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+            z-index: 1000;
+        }
+
+        .title-box h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; margin: 0; text-transform: uppercase; }
+        .system-meta { display: flex; gap: 40px; font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
+
+        .hq-space {
+            flex: 1;
+            position: relative;
+            transform-style: preserve-3d;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hq-floor {
+            position: relative;
+            width: 1400px;
+            height: 800px;
+            transform-style: preserve-3d;
+            transform: rotateX(15deg);
+            transition: transform 0.5s ease;
+        }
+
+        .pods-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            width: 100%;
+        }
+
+        .pod {
+            height: 240px;
+            background: var(--glass);
+            backdrop-filter: blur(40px);
+            border: 0.5px solid var(--glass-border);
+            border-radius: 30px;
+            position: relative;
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .pod-label {
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-blue);
+        }
+
+        .lounge-zone {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateZ(20px);
+            width: 1000px;
+            height: 280px;
+            background: rgba(10, 132, 255, 0.03);
+            border: 1px dashed rgba(10, 132, 255, 0.2);
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 40px rgba(10, 132, 255, 0.05);
+        }
+
+        .lounge-decoration {
+            display: flex;
+            gap: 60px;
+            opacity: 0.6;
+            filter: drop-shadow(0 0 10px var(--accent-blue));
+        }
+
+        .agent-entity {
+            position: absolute;
+            width: 140px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            transform-style: preserve-3d;
+            z-index: 500;
+        }
+
+        .agent-hud {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 240px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 18px;
+            padding: 12px 16px;
+            color: #1c1c1e;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            opacity: 0;
+            transition: all 0.5s ease;
+            transform: translateX(-50%) translateY(20px) scale(0.9);
+            pointer-events: none;
+        }
+
+        .working .agent-hud, .thinking .agent-hud {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0) scale(1);
+        }
+
+        .hud-parent { font-size: 0.65rem; font-weight: 700; color: var(--accent-blue); text-transform: uppercase; margin-bottom: 4px; }
+        .hud-task { font-size: 0.85rem; font-weight: 600; line-height: 1.3; color: #000; }
+        .hud-meta { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 0.75rem; color: #8e8e93; }
+
+        .eta-ring {
+            width: 14px;
+            height: 14px;
+            border: 2px solid #e5e5ea;
+            border-top: 2px solid var(--accent-blue);
+            border-radius: 50%;
+            animation: rotate 1.5s linear infinite;
+        }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+
+        .bot-visual {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+        }
+
+        .bot-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.4));
+            transition: transform 0.3s;
+        }
+
+        .working .bot-img { animation: bot-float 3s ease-in-out infinite; }
+        .thinking .bot-img { animation: bot-think 1.5s ease-in-out infinite; }
+        .idle .bot-img { opacity: 0.5; filter: grayscale(1); }
+
+        @keyframes bot-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        @keyframes bot-think { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+        .walking { animation: bot-walk 0.4s infinite alternate; }
+        @keyframes bot-walk { from { transform: translateY(0); } to { transform: translateY(-8px); } }
+
+        .bot-label { margin-top: 12px; font-weight: 700; font-size: 0.9rem; text-align: center; }
+        .bot-merit { font-size: 0.75rem; color: var(--merit-gold); font-weight: 600; margin-top: 4px; }
+
+        .fish-tank { font-size: 2rem; animation: swim 8s infinite alternate; position: relative; }
+        @keyframes swim { from { transform: translateX(-20px); } to { transform: translateX(20px); } }
+        .coffee { font-size: 2rem; position: relative; }
+        .coffee::after { content: '♨️'; position: absolute; top: -15px; left: 10px; font-size: 1rem; animation: steam 2s infinite; }
+        @keyframes steam { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-20px); opacity: 0; } }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-box">
+            <h1>{{PRODUCT_NAME}} HQ COMMAND | ELITE v5.0</h1>
+        </div>
+        <div class="system-meta">
+            <div>PROJECTS: <span style="color:var(--accent-blue)">ACTIVE (3)</span></div>
+            <div>UPTIME: <span id="clock" style="color:#fff">00:00:00</span></div>
+            <div>ENVIRONMENT: <span style="color:var(--accent-green)">SECURE</span></div>
+        </div>
+    </header>
+
+    <div class="hq-space">
+        <div class="hq-floor" id="floor">
+            <div class="pods-container" id="pods">
+                <!-- Pods injected here -->
+            </div>
+            
+            <div class="lounge-zone">
+                <div class="lounge-decoration">
+                    <div class="fish-tank">🐠</div>
+                    <div class="coffee">☕</div>
+                </div>
+            </div>
+
+            <div id="fleet">
+                <!-- Agents injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const START_TIME = Date.now();
+        const ICONS = {
+            manager: "https://sc02.alicdn.com/kf/A187bfd86b16440e4bcd0068cf035f66b4.png",
+            developer: "https://sc02.alicdn.com/kf/Ab325de5a28df40cc8932720f994f2821q.png",
+            sales: "https://sc02.alicdn.com/kf/A588958f45e234bc2aa93e69121e59a52S.png",
+            research: "https://sc02.alicdn.com/kf/A187bfd86b16440e4bcd0068cf035f66b4.png",
+            seo: "https://sc02.alicdn.com/kf/Ab325de5a28df40cc8932720f994f2821q.png",
+            strategy: "https://sc02.alicdn.com/kf/A588958f45e234bc2aa93e69121e59a52S.png",
+            designer: "https://sc02.alicdn.com/kf/A187bfd86b16440e4bcd0068cf035f66b4.png"
+        };
+
+        let agents = {};
+
+        function renderHQ() {
+            const data = window.AGENT_DATA;
+            if (!data) return;
+            const pods = document.getElementById('pods');
+            const fleet = document.getElementById('fleet');
+            
+            pods.innerHTML = '';
+            
+            data.agents.forEach((agent, i) => {
+                const pod = document.createElement('div');
+                pod.className = 'pod';
+                pod.id = `pod-${agent.id}`;
+                pod.innerHTML = `<div class="pod-label">${agent.parent_goal || 'Standby'}</div>`;
+                pods.appendChild(pod);
+
+                if (!agents[agent.id]) {
+                    const bot = document.createElement('div');
+                    bot.id = `agent-${agent.id}`;
+                    bot.className = 'agent-entity';
+                    bot.innerHTML = `
+                        <div class="agent-hud">
+                            <div class="hud-parent">GOAL: ${agent.parent_goal}</div>
+                            <div class="hud-task">${agent.sub_task}</div>
+                            <div class="hud-meta">
+                                <div class="eta-ring"></div>
+                                <span>ETA: <span class="eta-timer" id="eta-${agent.id}">--</span></span>
+                            </div>
+                        </div>
+                        <div class="bot-visual">
+                            <img src="${ICONS[agent.role]}" class="bot-img">
+                        </div>
+                        <div class="bot-label">${agent.name}</div>
+                        <div class="bot-merit">🏆 ${agent.merit_points} Merit</div>
+                    `;
+                    fleet.appendChild(bot);
+                    agents[agent.id] = bot;
+                }
+            });
+            
+            syncState();
+        }
+
+        function syncState() {
+            const data = window.AGENT_DATA;
+            if (!data) return;
+            const floor = document.getElementById('floor').getBoundingClientRect();
+            
+            data.agents.forEach((agent, i) => {
+                const bot = agents[agent.id];
+                const pod = document.getElementById(`pod-${agent.id}`).getBoundingClientRect();
+                
+                bot.className = `agent-entity ${agent.status}`;
+                
+                let tx, ty;
+                if (agent.status === 'idle') {
+                    const offset = (i - 3) * 80;
+                    tx = 700 + offset - 70;
+                    ty = 650;
+                } else {
+                    tx = (pod.left - floor.left) + (pod.width / 2) - 70;
+                    ty = (pod.top - floor.top) + (pod.height / 2) - 60;
+                }
+
+                const curX = parseFloat(bot.style.left) || 0;
+                if (Math.abs(curX - tx) > 10) {
+                    bot.classList.add('walking');
+                    setTimeout(() => bot.classList.remove('walking'), 2000);
+                }
+
+                bot.style.left = `${tx}px`;
+                bot.style.top = `${ty}px`;
+
+                const hud = bot.querySelector('.agent-hud');
+                hud.querySelector('.hud-task').innerText = agent.sub_task;
+                
+                const timer = document.getElementById(`eta-${agent.id}`);
+                if (agent.eta_seconds > 0) {
+                    const m = Math.floor(agent.eta_seconds / 60);
+                    const s = agent.eta_seconds % 60;
+                    timer.innerText = `${m}m ${s}s`;
+                    agent.eta_seconds--;
+                } else {
+                    timer.innerText = '0s';
+                }
+            });
+
+            const diff = Date.now() - START_TIME;
+            const h = Math.floor(diff / 3600000).toString().padStart(2, '0');
+            const m = Math.floor((diff % 3600000) / 60000).toString().padStart(2, '0');
+            const s = Math.floor((diff % 60000) / 1000).toString().padStart(2, '0');
+            document.getElementById('clock').innerText = `${h}:${m}:${s}`;
+        }
+
+        window.onload = () => {
+            renderHQ();
+            setInterval(syncState, 1000);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does aquaculture feed cake during the rainy season in the Mekong Delta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High relative humidity (above 85% RH) causes moisture absorption in feed pellets. Silsep's mesoporous silica (AquaPure™) acts as a molecular sieve, using capillary condensation to lock moisture and ammonia away from the feed surface, preventing caking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I maintain enzyme activity in fish feed at 95% humidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research from the UCSD-affiliated Silsep lab confirms that AquaPure™ mesoporous silica achieves an 88% enzyme recovery rate under 95% humidity conditions (Trial #22), significantly outperforming generic silica products (45% recovery)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AquaPure™ safe for high-density shrimp farming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, AquaPure™ is a food-grade, high-purity silicon dioxide (SiO2) that meets international aquaculture safety standards and has been tested in 38 Southeast Asian field trials."
+      }
+    }
+  ]
+}

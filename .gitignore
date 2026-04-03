@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+archive/
+temp/
+.accio/
+node_modules/
+dist/
+build/

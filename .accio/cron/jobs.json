@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1775015634236-jjrzejto",
+      "name": "Silsep_Hourly_Team_Sync",
+      "description": "每小时自动检查 Silsep 团队各 Agent 进度并汇总汇报。",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775015634236,
+      "updatedAtMs": 1775210400172,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "@{DID-F456DA-2B0D4C} 自动执行每小时团队同步：\n1. 请各专家（编程大师 Codi, 营销专家 Michael, Pho, 搜索引擎优化师 Geo, Gorgeous）汇报过去一小时的进展。\n2. 更新 AGENT_OPERATIONS_CENTER.md 功劳积分。\n3. 检查任务列表，下达下一小时的具体指令。\n4. 为用户生成一份精简的进度报告。",
+        "agent": "DID-F456DA-2B0D4C"
+      },
+      "state": {
+        "lastRunAtMs": 1775210400140,
+        "lastStatus": "ok",
+        "lastDurationMs": 23,
+        "nextRunAtMs": 1775214000000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-73198261U1774931-AEF4CA-8995-5EE88C"
+      },
+      "workspacePath": "C:\\Users\\john\\.accio\\accounts\\1751198261\\agents\\DID-DB9653-765527\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1775200725259-5g6sz48c",
+      "name": "Silsep-Compute-Optimizer-Routine",
+      "description": "每2小时执行一次算力优化协议：暂停非核心项目、清理冗余网页、压缩任务列表。",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775200725259,
+      "updatedAtMs": 1775207731286,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */2 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "我是 Compute-Optimizer。现在执行每2小时一次的算力脱水协议：\n1. 扫描项目根目录，将所有非 AquaPure 核心文件（如 CoatPure, RubberPure 相关草稿）以及 2 小时前的临时 HTML/JS 调试页面强制移入 archive/。\n2. 检查任务列表 (task_list)，将所有超过 4 小时未推进的 pending 任务标记为 [PAUSED] 或 [SKIPPED]，以减少上下文噪音。\n3. 压缩 AGENT_OPERATIONS_CENTER.md 中的冗余描述，确保 Single Source of Truth。\n4. 检查是否有运行超过 3 分钟的僵死进程，并强制 kill。\n完成后，向老板汇报优化的 Token 数量和清理的文件清单。",
+        "agent": "general"
+      },
+      "state": {
+        "nextRunAtMs": 1775214000000,
+        "lastRunAtMs": 1775207731264,
+        "lastStatus": "ok",
+        "lastDurationMs": 48
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-73198261U1774931-AEF4CA-8995-5EE88C"
+      },
+      "workspacePath": "C:\\Users\\john\\.accio\\accounts\\1751198261\\agents\\DID-DB9653-765527\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    }
+  ]
+}
