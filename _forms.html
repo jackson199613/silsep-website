@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netlify Forms</title>
+</head>
+<body>
+    <form name="trial-request" method="POST" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="trial-request">
+        <input type="text" name="name">
+        <input type="email" name="email">
+        <input type="text" name="company">
+        <input type="tel" name="phone">
+        <input type="text" name="address">
+    </form>
+
+    <form name="standalone-trial-request" method="POST" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="standalone-trial-request">
+        <input type="text" name="name">
+        <input type="email" name="email">
+        <input type="text" name="company">
+        <input type="tel" name="phone">
+        <textarea name="address"></textarea>
+    </form>
+
+    <form name="modal-trial-request" method="POST" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="modal-trial-request">
+        <input type="text" name="name">
+        <input type="email" name="email">
+        <input type="text" name="company">
+        <input type="tel" name="phone">
+        <textarea name="address"></textarea>
+    </form>
+
+    <form name="chat-inquiry" method="POST" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="chat-inquiry">
+        <input type="text" name="name">
+        <input type="email" name="email">
+        <textarea name="question"></textarea>
+    </form>
+</body>
+</html>
