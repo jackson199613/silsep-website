@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'section_contact_title': 'Let\'s Work Together',
             'section_contact_desc': 'Contact Silsep today to learn how our molecular solutions can optimize your animal nutrition and health programs.',
             'info_location': 'R&D: San Diego, CA, USA | Production: Sanming, Fujian, China',
-            'info_contact': 'sales@silsep.com | +86 18605971038 | +1 619 609 3350',
+            'info_contact': 'sales@silsep.com | +86 18605971038 | +1 609 609 3350',
             'footer_desc': 'Global R&D + Direct Manufacturing. Bridging San Diego innovation with 20+ years of industrial silica expertise.',
             'footer_rights': '© 2026 SILSEP Industries. Inspired Molecular Solutions.',
             'footer_col_company': 'Company',
