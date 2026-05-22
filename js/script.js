@@ -478,8 +478,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <input type="text" name="name" required placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                                <label data-i18n="form_email">Work Email (邮箱) *</label>
-                                <input type="email" name="email" required placeholder="professional@company.com">
+                                <label data-i18n="form_email">Work Email (邮箱)</label>
+                                <input type="email" name="email" placeholder="professional@company.com">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="form_company">Company (公司) *</label>
