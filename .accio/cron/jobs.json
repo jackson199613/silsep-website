@@ -5,10 +5,10 @@
       "id": "cron-1775015634236-jjrzejto",
       "name": "Silsep_Hourly_Team_Sync",
       "description": "每小时自动检查 Silsep 团队各 Agent 进度并汇总汇报。",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": false,
       "createdAtMs": 1775015634236,
-      "updatedAtMs": 1775210400172,
+      "updatedAtMs": 1776150193912,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -20,10 +20,9 @@
         "agent": "DID-F456DA-2B0D4C"
       },
       "state": {
-        "lastRunAtMs": 1775210400140,
+        "lastRunAtMs": 1776150159679,
         "lastStatus": "ok",
-        "lastDurationMs": 23,
-        "nextRunAtMs": 1775214000000
+        "lastDurationMs": 33
       },
       "target": {
         "type": "conversation",
@@ -40,10 +39,10 @@
       "id": "cron-1775200725259-5g6sz48c",
       "name": "Silsep-Compute-Optimizer-Routine",
       "description": "每2小时执行一次算力优化协议：暂停非核心项目、清理冗余网页、压缩任务列表。",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": false,
       "createdAtMs": 1775200725259,
-      "updatedAtMs": 1775207731286,
+      "updatedAtMs": 1776150191628,
       "schedule": {
         "kind": "cron",
         "expr": "0 */2 * * *",
@@ -55,10 +54,9 @@
         "agent": "general"
       },
       "state": {
-        "nextRunAtMs": 1775214000000,
-        "lastRunAtMs": 1775207731264,
+        "lastRunAtMs": 1776150159737,
         "lastStatus": "ok",
-        "lastDurationMs": 48
+        "lastDurationMs": 65
       },
       "target": {
         "type": "conversation",
@@ -70,6 +68,39 @@
         "actorId": "DID-F456DA-2B0D4C"
       },
       "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1775464999752-8ac71ulk",
+      "name": "Silsep_Kanban_Robot",
+      "description": "每小时自动巡检任务进度，更新看板并向老板汇总汇报。",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775464999752,
+      "updatedAtMs": 1775470232033,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "@{DID-F456DA-2B0D4C} 机器人整点报时！请立即执行以下操作：1. 抓取 task_list 最新状态。2. 更新 AGENT_OPERATIONS_CENTER.md 中的 Kanban 表格。3. 检查各专家（Codi, Michael, Pho, Geo, Gorgeous）是否有阻塞。4. 为老板生成一份脱水进度简报。",
+        "agent": "Accio"
+      },
+      "state": {
+        "lastRunAtMs": 1775469661887,
+        "lastStatus": "ok",
+        "lastDurationMs": 730
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-73198261U1774931-AEF4CA-8995-5EE88C"
+      },
+      "workspacePath": "C:\\Users\\john\\.accio\\accounts\\1751198261\\agents\\DID-DB9653-765527\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
     }
   ]
 }

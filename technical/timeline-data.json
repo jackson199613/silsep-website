@@ -1,0 +1,46 @@
+[
+  {
+    "id": "foundation",
+    "period": "2011-2015",
+    "title": "Pore Engineering Foundation",
+    "location": "San Diego R&D Center",
+    "breakthrough": "Achievement of 2nm Uniform Mesoporous Architecture in Synthetic Amorphous Silica (SAS).",
+    "trial_ref": "Trial #01-A: Kinetic Adsorption",
+    "impact": "Established the theoretical limit for surface area-to-volume ratio in feed carriers, enabling high-load liquid absorption without clumping.",
+    "economic_contribution": "$12M industry-wide reduction in carrier waste.",
+    "visual_tag": "2nm-pore-grid"
+  },
+  {
+    "id": "shielding",
+    "period": "2016-2020",
+    "title": "Molecular Shielding & Protection",
+    "location": "Global Feed Extrusion Trials",
+    "breakthrough": "Invention of the 'Molecular Shield'—protecting sensitive phytase and protease at 95°C constant extrusion heat.",
+    "trial_ref": "Trial #22: Thermal Defense",
+    "impact": "88% recovery of bioactive payloads in tropical processing environments, bypassing the need for over-dosing.",
+    "economic_contribution": "$24M annual enzyme cost recovery for Tier-1 feed mills.",
+    "visual_tag": "thermal-shield-3d"
+  },
+  {
+    "id": "validation",
+    "period": "2021-2024",
+    "title": "Mekong Delta Field Validation",
+    "location": "Vietnam Aquaculture Hub",
+    "breakthrough": "Real-world validation of 'Cation Magnet' technology for rapid Ammonia-N reduction and AGP-free gut integrity.",
+    "trial_ref": "Trial #31 & Trial #05",
+    "impact": "-1.5ppm Ammonia-N reduction within 4 hours; 40% reduction in mortality during high-density shrimp cycles.",
+    "economic_contribution": "$1.2k per hectare profit increase for semi-intensive farms.",
+    "visual_tag": "mekong-delta-trial"
+  },
+  {
+    "id": "digitalization",
+    "period": "2025-2026+",
+    "title": "Scientific Empire & Digitalization",
+    "location": "Silsep Command Center",
+    "breakthrough": "Integration of Matrix 1000 Autonomous Outreach and Aqua-Profit™ Real-time ROI Forecasting.",
+    "trial_ref": "Trial #38: Digital Correlation",
+    "impact": "Closing the loop between molecular science and farm-gate profitability through AI-driven nutritional modeling.",
+    "economic_contribution": "Predictive FCR optimization saving $0.05 per kg of biomass.",
+    "visual_tag": "digital-profit-hud"
+  }
+]

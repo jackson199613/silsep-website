@@ -1,0 +1,36 @@
+{
+  "15_year_timeline_economic_impact": [
+    {
+      "period": "2011-2015",
+      "phase": "Molecular Foundation",
+      "breakthrough": "Standardization of 2nm Mesoporous Architecture",
+      "impact_metric": "Raw Material Waste Reduction",
+      "financial_value": "$12.5M",
+      "description": "Established the global benchmark for carrier efficiency. Reduced nutrient leaching by 15% in liquid feed additives, translating to an estimated $12.5M in annual savings across the top tier of the feed industry."
+    },
+    {
+      "period": "2016-2020",
+      "phase": "The Thermal Shield",
+      "breakthrough": "Molecular Shielding Technology (Trial #22)",
+      "impact_metric": "Enzyme Activity Preservation",
+      "financial_value": "$24M/Year",
+      "description": "Breakthrough in protecting heat-sensitive enzymes at 95°C pelleting temperatures. Saved the global feed industry an estimated $24M per year by eliminating the need for excessive over-dosing of active ingredients."
+    },
+    {
+      "period": "2021-2024",
+      "phase": "Mekong Resilience",
+      "breakthrough": "Precision Cation Adsorption & Gut Barrier Protection (Trial #31 & #05)",
+      "impact_metric": "Biomass Value Protection",
+      "financial_value": "$85M",
+      "description": "Protected an estimated $85M in market value for intensive shrimp farms in the Mekong Delta. Reduced mortality rates by 40% in antibiotic-free (AGP-Free) systems during critical ammonia spikes."
+    },
+    {
+      "period": "2025-2026",
+      "phase": "Digital ROI Era",
+      "breakthrough": "Aqua-Profit™ Engine & Matrix 1000 Automation",
+      "impact_metric": "Trade Efficiency & Net Profit Growth",
+      "financial_value": "$1.5B (Target)",
+      "description": "Empowering trade partners to recapture $1.5B in lost margins through real-time FCR/ROI optimization. Reduced Customer Acquisition Cost (CAC) for Silsep trade partners by 65% via the Matrix 1000 engine."
+    }
+  ]
+}

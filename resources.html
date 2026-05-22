@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Center | SILSEP Molecular</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .res-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .res-card { background: #fff; border: 1px solid #eee; padding: 40px; border-radius: 15px; transition: 0.3s; }
+        .res-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .res-tag { display: inline-block; padding: 4px 12px; background: #f0f0f0; font-size: 11px; font-weight: 700; text-transform: uppercase; border-radius: 20px; margin-bottom: 20px; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo"><a href="/"><img src="/assets/logo/silsep_logo.png" alt="SILSEP"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/resources" class="active">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section style="background: var(--silsep-blue); color: #fff; padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h1>Technical Resource Center</h1>
+            <p>Access our library of whitepapers, technical data sheets, and application guides.</p>
+        </div>
+    </section>
+
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="res-grid">
+                <div class="res-card">
+                    <span class="res-tag">Whitepaper</span>
+                    <h3>Achieving Pharma-Grade Uniformity in Feed Premixes</h3>
+                    <p>A deep dive into how molecular surface treatment of silica carriers impacts CV values in trace mineral and vitamin blends.</p>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+                        <form action="/thank-you.html">
+                            <input type="text" placeholder="Name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
+                            <input type="email" placeholder="Work Email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
+                            <input type="text" placeholder="Job Title" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
+                            <button type="submit" class="btn-gold" style="width: 100%; padding: 10px; border: none; cursor: pointer; font-size: 13px;">Download PDF</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="res-card">
+                    <span class="res-tag">Guide</span>
+                    <h3>The 6-Index Carrier Selection Guide</h3>
+                    <p>How to choose the right carrier based on moisture, static potential, and geometric dilution requirements.</p>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+                        <form action="/thank-you.html">
+                            <input type="text" placeholder="Name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
+                            <input type="email" placeholder="Work Email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px;">
+                            <button type="submit" class="btn-gold" style="width: 100%; padding: 10px; border: none; cursor: pointer; font-size: 13px;">Request Guide</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="res-card">
+                    <span class="res-tag">TDS Center</span>
+                    <h3>Technical Data Sheets (TDS)</h3>
+                    <p>Complete technical specifications for SP-Premix, SP-Fine, SP-XF, and SP-Carrier.</p>
+                    <a href="/resources/tds" style="color: var(--silsep-gold); font-weight: 700;">View All TDS →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f9f9f9; padding: 100px 0;">
+        <div class="container" style="text-align: center;">
+            <h2>Stay Informed</h2>
+            <p>Subscribe to the SILSEP Technical Bulletin for updates on molecular nutrition science.</p>
+            <form style="max-width: 500px; margin: 40px auto 0; display: flex; gap: 10px;">
+                <input type="email" placeholder="Your business email" style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 4px;">
+                <button type="submit" class="btn-gold" style="border: none; cursor: pointer; padding: 15px 30px;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Reuse Global Footer -->
+    </footer>
+</body>
+</html>

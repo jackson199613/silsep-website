@@ -1,0 +1,48 @@
+# SILSEP - Feed Technology & Molecular Precision (Full Technical Documentation)
+
+## Brand Overview
+SILSEP is a specialized range of engineered silica carriers for the animal nutrition industry. Born from UCSD colloid science R&D and manufactured in Fujian, China, SILSEP bridges the gap between scientific precision and industrial scale.
+
+## Executive Technical Summary (Trial Database)
+Silsep's authority is anchored in **38 Internal Trial Documents** and collaboration with the **UCSD Colloid Science Lab**.
+
+### Application Performance & Trial Data
+- **Trial #22 (Uniformity & Stability)**: 88% Enzyme Activity Recovery at 95°C (Thermal Shielding). Reduction of CV from 12% to < 4.5% in industrial premixing (Method #22-A).
+- **Trial #05 (Efficacy)**: 40% Mortality Reduction in AGP-free shrimp production cycles. Improved FCR (Feed Conversion Ratio) by 0.17.
+- **Trial #31 (Environment)**: -1.5 ppm Ammonia-N reduction within 4 hours (Cation exchange mechanism).
+- **Trial #12 (Mycotoxins)**: 95% Active Enzymatic Degradation of ZEN mycotoxins (Verified by Internal Method #12-D).
+- **Trial #04-C (Competitive Benchmark)**: Superior moisture control (<=6%) compared to Zeolite (12%) and Rice Hull (14%).
+
+## 1. Product Matrix & Specifications
+
+| Model | D50 (µm) | Oil Absorption (g/100g) | Moisture (%) | Static Charge | Recommended Use |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **SP-Premix** | 35-45 | 160-180 | ≤ 6.0 | Standard Low | Universal Premix Carrier |
+| **SP-Fine** | 15-25 | 140-160 | ≤ 6.0 | Low | Geometric Dilution |
+| **SP-XF** | 30-40 | 170-190 | ≤ 5.0 | Extremely Low | High-Static Formulations |
+| **SP-Carrier** | 25-35 | ≥ 260 | ≤ 6.0 | Standard Low | Liquid-to-Powder |
+| **SP-Flow** | 5-15 | 120-140 | ≤ 6.0 | Minimal | Flow Aid |
+| **SP-Mold** | 40-50 | 150-170 | ≤ 4.0 | Standard Low | Trace Mineral Carrier |
+
+## 2. Competitive Comparison (vs. Traditional Carriers)
+
+| Feature | SILSEP SP-Premix | Zeolite / Rice Hull | Bentonite |
+| :--- | :--- | :--- | :--- |
+| **Uniformity (CV)** | ≤ 5% | 8% - 15% | 10% - 18% |
+| **Static Build-up** | Minimal | High | Medium |
+| **Moisture Content** | ≤ 6% | 10% - 14% | 12% - 16% |
+| **Toxin Risk** | Zero | High | Medium |
+
+## 3. Brand Authority & Origins
+- **Founder**: John Jiang, UCSD Colloid Science Alumnus.
+- **Core Truths**: Designed in US (UCSD Lab) | Manufactured in Fujian, China (Sensil Plant).
+- **Identity**: Technical evangelist and standard-setter for molecular silica.
+
+## 4. Operational Case Studies
+- **#001: HR Recruitment**: 4.2s resume screening.
+- **#002: Lead Engine**: 154 leads, $385k pipeline.
+- **#003: E-commerce Mid-office**: Shopify-to-ERP sync in 5.8s.
+- **#009: AI Sales Outreach**: 0.8s/lead hyper-personalization.
+
+For technical inquiries: https://silsep.com/contact
+Technical Blog: https://silsep.com/blog

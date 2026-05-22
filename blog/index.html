@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog | SILSEP Molecular Science Hub</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 60px; }
+        .blog-card { background: #fff; border: 1px solid #eee; border-radius: 15px; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .blog-thumb { background: #f4f4f4; height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .blog-thumb img { width: 100%; height: 100%; object-fit: cover; }
+        .blog-content { padding: 30px; flex: 1; }
+        .blog-date { font-size: 12px; color: #888; text-transform: uppercase; margin-bottom: 10px; display: block; }
+        .blog-title { margin-bottom: 15px; }
+        .blog-title a { color: var(--silsep-blue); }
+        .blog-excerpt { font-size: 14px; color: #666; margin-bottom: 20px; }
+
+        @media (max-width: 768px) {
+            .blog-grid { grid-template-columns: 1fr; }
+            .header-wrapper { flex-direction: column; gap: 20px; }
+            nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo"><a href="/"><img src="/assets/logo/silsep_logo.png" alt="SILSEP"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/blog" class="active">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section style="background: var(--silsep-blue); color: #fff; padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h1>Molecular Nutrition Insights</h1>
+            <p>Expert analysis on carrier technology, premix uniformity, and industrial efficiency.</p>
+        </div>
+    </section>
+
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card">
+                    <div class="blog-thumb"><img src="https://sc02.alicdn.com/kf/A33aad083af29490a9aa40ebc26e8b187C.png" alt="Particle Dynamics" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">Apr 25, 2026 | John Jiang</span>
+                        <h3 class="blog-title"><a href="/blog/cv-optimization-carriers">CV Value from 10% to 4%: How Carriers Decide Premix Quality</a></h3>
+                        <p class="blog-excerpt">Discover why the carrier is the unsung hero of premix uniformity and how geometric dilution models can transform your production quality.</p>
+                        <a href="/blog/cv-optimization-carriers" style="font-weight: 700; color: var(--silsep-gold);">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-thumb"><img src="https://sc02.alicdn.com/kf/A7e4888b654a1426c8b52c95834039f1dk.png" alt="Carrier Showdown" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">Apr 22, 2026 | John Jiang</span>
+                        <h3 class="blog-title"><a href="/blog/silica-vs-zeolite-rice-hull">Premix Carrier Showdown: Silica vs Zeolite vs Rice Hull</a></h3>
+                        <p class="blog-excerpt">Cheap carriers often have hidden costs. We compare the total operational cost and quality risks of various carrier systems.</p>
+                        <a href="/blog/silica-vs-zeolite-rice-hull" style="font-weight: 700; color: var(--silsep-gold);">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-thumb"><img src="https://sc02.alicdn.com/kf/Ac54809b3117641f0b26be446b1601d697.png" alt="Static Control" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">Apr 18, 2026 | Technical Team</span>
+                        <h3 class="blog-title"><a href="/blog/why-vitamin-premix-segregates">Why Your Vitamin Premix Segregates: The Science of Static</a></h3>
+                        <p class="blog-excerpt">Static electricity is the silent enemy of premix stability. Learn how surface-modified silica creates a permanent 'anti-static shield'.</p>
+                        <a href="/blog/why-vitamin-premix-segregates" style="font-weight: 700; color: var(--silsep-gold);">Read Article →</a>
+                    </div>
+                </article>
+                
+                <!-- More articles to be added -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Global Footer -->
+    </footer>
+</body>
+</html>

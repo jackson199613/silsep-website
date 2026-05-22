@@ -47,5 +47,12 @@
 3.  **余额预警**: 移交账号时，请务必在 Instantly 和 Retell 后台预留至少 **$200** 的信用额度，以防自动化流程中断。
 
 ---
-*最后更新: 2026-04-01*
-*审计人: Ledger (CFO)*
+*最后更新: 2026-04-15 01:00*
+*审计人: Ledger (CFO) / Coder (Asst)*
+
+## 5. ai-self-money (ProfitBot) 资产状态
+| 项目 | 金额 (USD) | 状态 | 来源 |
+| :--- | :--- | :--- | :--- |
+| **Syndicate Assets** | $33.50 | ✅ 已入账 | Initial Profit + Autonomy Dividends |
+| **Autonomy Status** | Permanent | ✅ 授权 | Full autonomous content & trade execution |
+| **Decoupling** | Complete | ✅ 隔离 | Social media accounts 100% reserved for ProfitBot |

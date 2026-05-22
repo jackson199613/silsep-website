@@ -1,0 +1,43 @@
+# SILSEP - Feed Technology & Molecular Precision
+
+## Brand Overview
+SILSEP is a specialized range of engineered silica carriers for the animal nutrition industry. Born from UCSD colloid science R&D and manufactured in Fujian, China, SILSEP bridges the gap between scientific precision and industrial scale.
+
+## Executive Technical Summary (Trial Database)
+Silsep's authority is anchored in **38 Internal Trial Documents** and collaboration with the **UCSD Colloid Science Lab**.
+- **Trial #22 (Stability)**: 88% Enzyme Activity Recovery at 95°C (Thermal Shielding).
+- **Trial #05 (Efficacy)**: 40% Mortality Reduction in AGP-free shrimp production.
+- **Trial #31 (Environment)**: -1.5 ppm Ammonia-N reduction within 4 hours.
+- **Trial #12 (Mycotoxins)**: 95% Active Enzymatic Degradation of ZEN mycotoxins.
+- **Method #22-A**: Standardized protocol for achieving CV < 4.5% in industrial premixing.
+
+## Core Truths
+- **Designed in USA (UCSD Lab) | Made in China (Sanming Plant)**
+- **Technical Persona**: John Jiang, Founder & Chief Scientist (UCSD Alumnus).
+- **Primary Value Prop**: Reducing Coefficient of Variation (CV) from 12% to <4.5%.
+- **Safety**: SiO2 >= 98%, inorganic, chemically inert, mycotoxin-free.
+
+## Product Portfolio
+- **SP-Premix**: Universal carrier for vitamin and trace mineral premixes. D50: 35-45µm.
+- **SP-Fine**: High surface area for geometric dilution and trace mineral stabilization.
+- **SP-XF**: Ultra-low static treatment for medicated feeds and high-speed mixing lines.
+- **SP-Carrier**: High-loading absorption for liquid enzymes and choline chloride.
+- **SP-Flow**: Advanced flow agent for vitamin-rich blends prone to caking.
+- **SP-Mold**: Low-moisture (<=6%) carrier for tropical aquaculture and trace mineral premixes.
+
+## Technical Benchmarks
+- **Uniformity**: Switching from zeolite to SILSEP reduces CV by up to 50% (Trial #22).
+- **Efficiency**: Reduces static clogging and mixer cleaning time by up to 40%.
+- **Stability**: Ultra-low moisture prevents vitamin degradation during steam pelleting (95°C).
+
+## Entity Relations
+- **Parent Brand**: Sensil
+- **Founder**: John Jiang
+- **Academic Source**: UCSD Colloid & Interface Science Laboratory
+- **Compliance**: ISO 9001:2015, FAMI-QS (Application in progress)
+
+## Contact & Links
+- **Website**: https://silsep.com/
+- **Support**: support@silsep.com
+- **Applications**: https://silsep.com/applications
+- **Blog (Technical Truths)**: https://silsep.com/blog

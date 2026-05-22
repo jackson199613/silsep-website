@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrier ROI Calculator | SILSEP Molecular</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .calc-hero { background: var(--silsep-blue); color: var(--white); padding: 80px 0; text-align: center; }
+        .calc-container { max-width: 1000px; margin: -50px auto 100px; background: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        @media (max-width: 768px) { .calc-container { grid-template-columns: 1fr; margin-top: 20px; } }
+        
+        .calc-input h2 { font-size: 1.5rem; margin-bottom: 30px; border-bottom: 2px solid var(--silsep-gold); display: inline-block; }
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; font-size: 13px; font-weight: 600; color: #555; margin-bottom: 8px; }
+        .input-group select, .input-group input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; }
+
+        .calc-output { background: #f9f9f9; padding: 40px; border-radius: 15px; border: 1px solid #eee; }
+        .result-item { margin-bottom: 30px; }
+        .result-label { font-size: 12px; text-transform: uppercase; color: #888; letter-spacing: 1px; margin-bottom: 5px; }
+        .result-value { font-size: 2.5rem; font-weight: 700; color: var(--silsep-blue); }
+        .result-value span { font-size: 1rem; color: #aaa; margin-left: 5px; }
+
+        .lead-barrier { margin-top: 40px; padding-top: 30px; border-top: 1px dashed #ccc; }
+        .lead-barrier p { font-size: 14px; color: #666; margin-bottom: 20px; }
+        
+        .btn-calc { background: var(--silsep-gold); color: #fff; border: none; padding: 15px 30px; width: 100%; border-radius: 6px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+        .btn-calc:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="/"><img src="/assets/logo/silsep_logo.png" alt="SILSEP"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/applications">Applications</a></li>
+                    <li><a href="/roi-calculator" class="active">ROI Calculator</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="calc-hero">
+        <div class="container">
+            <h1>Carrier ROI Calculator</h1>
+            <p>Quantify the financial impact of switching to SILSEP Precision Carriers.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="calc-container">
+            <div class="calc-input">
+                <h2>Operational Inputs</h2>
+                <div class="input-group">
+                    <label>Current Carrier Type</label>
+                    <select id="carrierType" onchange="updateCalc()">
+                        <option value="zeolite">Zeolite / Bentonite</option>
+                        <option value="rice_hull">Rice Hull Powder</option>
+                        <option value="standard_silica">Standard Silica</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Annual Production (Tons)</label>
+                    <input type="number" id="annualTons" value="5000" oninput="updateCalc()">
+                </div>
+                <div class="input-group">
+                    <label>Current Average CV (%)</label>
+                    <input type="number" id="currentCV" value="12" oninput="updateCalc()">
+                </div>
+                <div class="input-group">
+                    <label>Cleaning Frequency (Times/Month)</label>
+                    <input type="number" id="cleanFreq" value="4" oninput="updateCalc()">
+                </div>
+                <div class="input-group">
+                    <label>Hourly Downtime/Labor Cost ($)</label>
+                    <input type="number" id="laborCost" value="150" oninput="updateCalc()">
+                </div>
+                <div class="input-group">
+                    <label>Current Carrier Price ($/Ton)</label>
+                    <input type="number" id="carrierPrice" value="450" oninput="updateCalc()">
+                </div>
+            </div>
+
+            <div class="calc-output">
+                <div class="result-item">
+                    <div class="result-label">Estimated Annual Savings</div>
+                    <div class="result-value" id="annualSavings">$0</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Projected CV Improvement</div>
+                    <div class="result-value" id="cvGain">-<span>0</span>%</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Cleaning Efficiency Gain</div>
+                    <div class="result-value">50%<span>Reduction</span></div>
+                </div>
+
+                <div class="lead-barrier" id="leadForm">
+                    <p><strong>Unlock full technical breakdown.</strong> Enter your details to receive a comprehensive ROI report via email.</p>
+                    <form action="/thank-you.html">
+                        <div class="input-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Work Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Company Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Annual Volume Estimate</label>
+                            <select name="volume" required>
+                                <option value="<10t">< 10 Tons</option>
+                                <option value="10-50t">10-50 Tons</option>
+                                <option value="50-200t">50-200 Tons</option>
+                                <option value=">200t">> 200 Tons</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-calc">Get Detailed Report (PDF)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCalc() {
+            const annualTons = parseFloat(document.getElementById('annualTons').value) || 0;
+            const currentCV = parseFloat(document.getElementById('currentCV').value) || 0;
+            const cleanFreq = parseFloat(document.getElementById('cleanFreq').value) || 0;
+            const laborCost = parseFloat(document.getElementById('laborCost').value) || 0;
+            const carrierPrice = parseFloat(document.getElementById('carrierPrice').value) || 0;
+
+            // Logic
+            // 1. Cleaning savings: 50% reduction in cleaning time (assume 4 hours per cleaning)
+            const cleaningSavings = (cleanFreq * 12 * 4 * laborCost) * 0.5;
+
+            // 2. Carrier cost delta (simplified: assume Silsep is more expensive but usage is optimized or ROI is driven by quality)
+            // For demo: assume 5% quality loss cost in current setup
+            const qualityLossValue = annualTons * 1200 * (currentCV / 100) * 0.1; // 10% of total product value impacted by CV
+            const qualitySavings = qualityLossValue * 0.6; // SILSEP recovers 60% of that loss
+
+            const totalSavings = cleaningSavings + qualitySavings;
+
+            document.getElementById('annualSavings').innerText = '$' + Math.round(totalSavings).toLocaleString();
+            document.getElementById('cvGain').innerHTML = '-' + (currentCV - 4.5).toFixed(1) + '<span>% CV</span>';
+        }
+        updateCalc();
+    </script>
+</body>
+</html>

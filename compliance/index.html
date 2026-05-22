@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silsep Compliance Center | Global Resource Library (TDS/SDS)</title>
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent: #ff4d4d; /* Red for Compliance */
+            --text: #ffffff;
+        }
+        body {
+            background: #0d0d0d;
+            color: var(--text);
+            font-family: -apple-system, system-ui, sans-serif;
+            padding: 60px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .glass-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .header { text-align: center; margin-bottom: 60px; }
+        .table { width: 100%; border-collapse: collapse; }
+        .table th { text-align: left; padding: 20px; border-bottom: 1px solid var(--glass-border); color: #888; text-transform: uppercase; font-size: 12px; }
+        .table td { padding: 20px; border-bottom: 1px solid var(--glass-border); font-size: 14px; }
+        .download-link { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .download-link:hover { text-decoration: underline; }
+        .status-badge { background: rgba(0, 255, 100, 0.1); color: #00ff64; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="letter-spacing: -1px; font-size: 48px;">Resource & Compliance Hub</h1>
+            <p style="color: #666;">Global Technical Data Sheets (TDS) and Safety Data Sheets (SDS) for all Silsep™ Silica Grades.</p>
+        </div>
+
+        <div class="glass-card">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product Grade</th>
+                        <th>Application</th>
+                        <th>Format</th>
+                        <th>TDS (Technical)</th>
+                        <th>SDS (Safety)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>AquaPure™ 8K-A</b></td>
+                        <td>Aquaculture Feed Stability</td>
+                        <td>Powder</td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>CoatPure™ CP-20</b></td>
+                        <td>Industrial Coating Matting</td>
+                        <td>Micro-Granular</td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>RubberPure™ R-50</b></td>
+                        <td>High Reinforcement Rubber</td>
+                        <td>Granular</td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                        <td><a href="#" class="download-link">Download PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; color: #444; font-size: 12px;">
+            <p>© 2026 Silsep. All documents are current and compliant with GHS and REACH regulations.</p>
+        </div>
+    </div>
+</body>
+</html>

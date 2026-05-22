@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Silsep™ Precision Trial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; background: #f4f7f9; }
+        .thank-you-card { background: white; padding: 60px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 500px; }
+        h1 { color: var(--primary-color); margin-bottom: 20px; }
+        p { color: #666; margin-bottom: 30px; }
+    </style>
+
+    <!-- Apollo: Website Visitor ID -->
+    <script>
+      function initApollo(){
+        var n=Math.random().toString(36).substring(7),
+        o=document.createElement("script");
+        o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,
+        o.async=!0,o.defer=!0,
+        o.onload=function(){
+          window.trackingFunctions.onLoad({appId:"69eed6b2244daa001981357e"})
+        },
+        document.head.appendChild(o)
+      }
+      initApollo();
+    </script>
+</head>
+<body>
+    <div class="thank-you-card">
+        <i class="fas fa-check-circle" style="font-size: 60px; color: #2ecc71; margin-bottom: 20px;"></i>
+        <h1>Request Received</h1>
+        <p>Thank you for requesting a 500g technical trial. Our technical team will review your application and contact you within 24 hours to confirm shipment details.</p>
+        <a href="index.html" class="btn-primary">Return Home</a>
+    </div>
+</body>
+</html>

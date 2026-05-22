@@ -7,18 +7,25 @@ This document defines the visual soul of Silsep's digital ecosystem. All agents 
 *   **Intentional Technology**: We use tech-forward aesthetics (neon, glassmorphism) not as a trend, but to represent the clarity of our molecular solutions.
 *   **The "Human-Agent" Synergy**: Visuals should feel futuristic yet approachable (Q-bot aesthetics).
 
-## 2. Color Palette
+## 2. Color Palette (Phase 1 / P0 Refresh)
 | Color | Hex | Role |
 | :--- | :--- | :--- |
-| **Silsep Blue** | `#00A3FF` | Primary Brand Color, Links, Primary Buttons |
-| **Accent Cyan** | `#00F0FF` | Highlights, Technical Details |
-| **Status Success** | `#00FFB2` | Active/Working States |
-| **Merit Gold** | `#FFD700` | Achievement, Points, Rewards |
-| **Deep Slate** | `#020617` | Background, Dark Mode Surface |
+| **Tech Deep Blue** | `#0A2B4E` | Primary Brand Color (Sensil Heritage), Navigation, Backgrounds |
+| **SILSEP Malt Gold** | `#C49A2B` | Accent Color, Primary Buttons, Highlighting, "Feed/Earth" association |
+| **Eco Green** | `#2E7D32` | Secondary Color, Sustainability/Safety indicators |
+| **Neutral White** | `#FFFFFF` | Text on Dark, Content Surfaces |
+| **Light Grey** | `#F5F7FA` | Subtle Backgrounds, Dividers |
+| **Deep Grey** | `#333333` | Primary Body Text (on Light), Footer Backgrounds |
 
 ## 3. Typography
-*   **Primary (UI/Prose)**: `Inter` - Clean, professional, high readability.
-*   **Technical (Data/Code)**: `Roboto Mono` - For technical specs and merit tracking.
+*   **Titles/Headers**: `Inter` or `Satoshi` - High-authority, deliberate geometric fonts. Use heavy weights (700+) for main headers.
+*   **Body Text**: `Native System Font Stack` (`-apple-system`, `BlinkMacSystemFont`, `"Segoe UI"`, `Roboto`, etc.) - For maximum performance and LCP optimization.
+*   **Technical Data**: `JetBrains Mono` - Continued for technical specs and metadata to maintain "Scientific Institution" vibe.
+
+## 4. Logo & Identity
+*   **Main Logo**: SILSEP wordmark (Satoshi/Inter Bold) with distinct "S" graphical element.
+*   **Sub-branding**: Always include "A Sensil Brand" in small type below or alongside the main SILSEP logo.
+*   **Favicon**: SILSEP "S" icon in Malt Gold on Tech Deep Blue background.
 
 ## 4. UI Patterns (The Dashboard)
 *   **Glassmorphism**: Use `backdrop-filter: blur(12px)` and subtle semi-transparent borders.
@@ -83,6 +90,31 @@ To support the expansion into Rubber, Paint, Food, and Electronic grades, the vi
 | **Paint-Grade** | `#F43F5E` | Paint Palette / Rainbow Neon HUD | Creative / High-Gloss Red |
 | **Food-Grade** | `#10B981` | Wheat Stalk / Organic Green HUD | Clean-room / Bio-Green |
 | **Electronic-Grade** | `#8B5CF6` | Circuit Pattern / Purple Neon HUD | High-Tech / Electric Purple |
+| **CoatPure (New)** | `#F43F5E` | Matte Texture / Paint Palette | Architectural / High-Gloss Red |
+
+## 11. Industrial Technical Visualization (Elite Standard)
+To maintain "Apple-level" trust while presenting complex chemical data, all technical assets must follow these visual rules:
+
+### A. Technical Tables (TDS/SDS)
+*   **Background**: Glassmorphism (20% opacity white on Deep Slate).
+*   **Headers**: `JetBrains Mono`, Merit Gold text (`#FFD700`).
+*   **Borders**: 1px solid Silsep Blue (`#00A3FF`) at 20% opacity.
+*   **Interactivity**: Hover states must highlight the entire row with a subtle cyan glow.
+
+### B. Chemical Charts (Particle Distribution/Absorption)
+*   **Lines**: Smooth curves (no jagged steps) using `Silsep Blue` and `Accent Cyan`.
+*   **Gradients**: Fill the area under the curve with a 10% opacity gradient of the line color.
+*   **Tooltips**: Use rounded corners (8px), 12px blur, and white text for high contrast.
+
+### C. Resource Cards (The Compliance Hub)
+*   **Iconography**: High-fidelity 3D document icons with a small glowing "Download" arrow.
+*   **Layout**: Grid-based (3 columns), with clearly labeled "TDS", "SDS", and "COA" buttons.
+
+### E. Molecular Evolution Lab (Scientific Heritage)
+*   **Aesthetic**: "Laboratory Industrial" – Deep Slate (`#020617`) paired with Neon Cyan (`#00F0FF`).
+*   **Microscope UI**: All scientific renders must be framed within a circular "Microscope Viewport" featuring HUD crosshairs and a slight peripheral vignette.
+*   **Typography**: Use `Plus Jakarta Sans` for headers (heavy weight, -3px letter-spacing) and `JetBrains Mono` for technical metadata (700 weight, 3px letter-spacing).
+*   **Interaction**: Implement "Scroll-to-Focus" where microscopic images zoom and rotate into place as the user scrolls into the viewport.
 
 ---
 *Maintained by Gorgeous (Visual Optimization Expert) - Silica Empire Expansion*
