@@ -107,31 +107,36 @@
         <p>A global task force for standardizing mesoporous silica performance and safety in aquaculture feed ecosystems.</p>
     </div>
 
-    <div class="form-card">
+    <form name="standards-initiative" method="POST" data-netlify="true" action="/thank-you.html" class="form-card">
+        <input type="hidden" name="form-name" value="standards-initiative">
         <div class="input-group">
             <label>Full Name</label>
-            <input type="text" placeholder="John Doe">
+            <input type="text" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="input-group">
+            <label>Work Email</label>
+            <input type="email" name="email" placeholder="professional@company.com">
         </div>
         <div class="input-group">
             <label>Organization / Academic Affiliation</label>
-            <input type="text" placeholder="e.g. C.P. Vietnam Technical Dept.">
+            <input type="text" name="organization" placeholder="e.g. C.P. Vietnam Technical Dept." required>
         </div>
         <div class="input-group">
             <label>Interest Area</label>
-            <select>
-                <option>Select Focus...</option>
-                <option>Adsorption Kinetics Standardization</option>
-                <option>Thermal Stability Protocols</option>
-                <option>Regulatory Compliance & Safety (REACH/MARD)</option>
-                <option>Feed Mill Efficiency Benchmarking</option>
+            <select name="interest_area">
+                <option value="">Select Focus...</option>
+                <option value="adsorption">Adsorption Kinetics Standardization</option>
+                <option value="thermal">Thermal Stability Protocols</option>
+                <option value="regulatory">Regulatory Compliance & Safety (REACH/MARD)</option>
+                <option value="efficiency">Feed Mill Efficiency Benchmarking</option>
             </select>
         </div>
         <div class="input-group">
             <label>Brief Statement of Contribution</label>
-            <textarea rows="4" placeholder="How can your organization contribute to the initiative?"></textarea>
+            <textarea name="statement" rows="4" placeholder="How can your organization contribute to the initiative?"></textarea>
         </div>
-        <button class="btn-submit">Join the Task Force</button>
-    </div>
+        <button type="submit" class="btn-submit">Join the Task Force</button>
+    </form>
 
     <div class="benefit-grid">
         <div class="benefit-item">
