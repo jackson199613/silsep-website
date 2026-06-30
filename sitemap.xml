@@ -1,49 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://www.silsep.com/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://silsep.com/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://silsep.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://silsep.com/?lang=cn"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://silsep.com/?lang=vn"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://silsep.com/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://silsep.com/"/>
   </url>
+
+  <!-- Products -->
   <url>
-    <loc>https://www.silsep.com/products.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>1.0</priority>
+    <loc>https://silsep.com/products</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://silsep.com/products?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://silsep.com/products?lang=cn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://silsep.com/products"/>
   </url>
+
+  <!-- Product anchors (individual product sections) -->
   <url>
-    <loc>https://www.silsep.com/cases.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <loc>https://silsep.com/products#feed-palatability</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
+
+  <!-- Case Studies -->
   <url>
-    <loc>https://www.silsep.com/insights.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.silsep.com/#animal</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.silsep.com/#aqua</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.silsep.com/#blog</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.silsep.com/#about</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.silsep.com/technical/climate-resilient-feed.html</loc>
+    <loc>https://silsep.com/cases.html</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
+
+  <!-- Insights / Blog -->
+  <url>
+    <loc>https://silsep.com/insights.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Technical pages -->
+  <url>
+    <loc>https://silsep.com/technical/carrier-science</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://silsep.com/technical/whitepapers</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://silsep.com/technical/quality</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- About / Contact -->
+  <url>
+    <loc>https://silsep.com/#about</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
