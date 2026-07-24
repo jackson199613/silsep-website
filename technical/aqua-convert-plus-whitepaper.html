@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Paper: Molecular Shielding in Tropical Pelleting | SILSEP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .paper-container { max-width: 900px; margin: 120px auto 60px; padding: 60px; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border-radius: 15px; }
+        .paper-header { border-bottom: 2px solid #eee; padding-bottom: 30px; margin-bottom: 40px; }
+        .paper-header h1 { font-size: 32px; color: var(--primary-color); margin-bottom: 15px; }
+        .paper-meta { font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .abstract { background: #f9fbfd; padding: 25px; border-left: 4px solid var(--primary-color); font-style: italic; margin-bottom: 40px; color: #555; }
+        .chart-box { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 30px; margin: 30px 0; text-align: center; }
+        .chart-title { font-weight: 700; margin-bottom: 20px; color: var(--secondary-color); font-size: 14px; }
+        
+        section { margin-bottom: 40px; line-height: 1.8; color: #444; }
+        h2 { font-size: 22px; color: var(--secondary-color); margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+        .data-table th, .data-table td { border: 1px solid #eee; padding: 15px; text-align: left; }
+        .data-table th { background: #f4f7f9; }
+        
+        .footer-note { border-top: 2px solid #eee; padding-top: 30px; margin-top: 60px; font-size: 14px; color: #888; }
+    </style>
+
+    <!-- Apollo: Website Visitor ID -->
+    <script>
+      function initApollo(){
+        var n=Math.random().toString(36).substring(7),
+        o=document.createElement("script");
+        o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,
+        o.async=!0,o.defer=!0,
+        o.onload=function(){
+          window.trackingFunctions.onLoad({appId:"69eed6b2244daa001981357e"})
+        },
+        document.head.appendChild(o)
+      }
+      initApollo();
+    </script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="https://sc02.alicdn.com/kf/A1a8d9700b46e4657b437c78f1a9aba99z.png" alt="SILSEP Logo">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <div class="header-actions">
+                    <div class="lang-selector">
+                        <a href="?lang=en">EN</a>
+                        <span>|</span>
+                        <a href="?lang=cn">CN</a>
+                        <span>|</span>
+                        <a href="?lang=vn">VN</a>
+                        <span>|</span>
+                        <a href="?lang=th">TH</a>
+                    </div>
+                    <a href="https://wa.me/16196093359" class="whatsapp-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li>
+                            <a href="../products.html">Solutions</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#" class="active">Technical Hub</a>
+                            <ul class="dropdown">
+                                <li><a href="whitepapers.html">Technical Whitepapers</a></li>
+                                <li><a href="authority.html">Industry Authority</a></li>
+                                <li><a href="science-lab.html">Molecular Lab</a></li>
+                                <li><a href="../community/standards-initiative.html">Standards Initiative</a></li>
+                                <li><a href="experts.html">Scientific Team</a></li>
+                                <li><a href="quality.html">Quality & Compliance</a></li>
+                                <li><a href="carrier-science.html">Carrier Science</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../cases.html">Case Studies</a></li>
+                        <li><a href="../index.html#request-sample" class="btn-primary" style="background: var(--accent-color); color: white; padding: 10px 20px; border-radius: 50px; font-size: 11px; text-decoration: none;">Request Free Sample</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="paper-container">
+        <div class="paper-header">
+            <span class="paper-meta">Technical White Paper | AquaScience™ Series | 2026</span>
+            <h1>Molecular Shielding: Maximizing Enzyme Bioavailability in Tropical Pelleting</h1>
+            <p><strong>Authors:</strong> Dr. John Jiang, Dr. Li Wei | San Diego Global R&D Center</p>
+        </div>
+
+        <div class="abstract">
+            <strong>Abstract:</strong> In tropical aquaculture, feed pelleting often requires high-temperature steam conditioning (up to 95°C). This process severely degrades exogenous enzymes, resulting in a 60-70% loss of bioactive efficacy. This white paper introduces SILSEP’s Molecular Shielding technology, demonstrating how the AquaConvertPlus™ carrier protects sensitive molecules, ensuring up to 88% recovery and significant FCR reduction.
+        </div>
+
+        <section>
+            <h2>1. The Problem: The "Nutritional Leak"</h2>
+            <p>During the manufacturing of high-density shrimp and tilapia feed, the conditioning phase is critical for water stability but lethal for biological additives. Standard industrial carriers offer no thermal protection, leading to what we term a "Nutritional Leak"—where the investment in expensive enzymes is lost before the feed reaches the farm.</p>
+        </section>
+
+        <section>
+            <h2>2. Methodology: SILSEP Molecular Shielding</h2>
+            <p>SILSEP utilizes a specialized synthetic silicate carrier with an open-network molecular architecture. This carrier acts as a "thermal buffer," encapsulating enzyme molecules within its pores and protecting them from direct heat and moisture during the steam Conditioning phase.</p>
+        </section>
+
+        <section>
+            <h2>3. Experimental Results</h2>
+            <p>Trials were conducted in a commercial feed mill in Sanming, Fujian, simulating tropical conditions (Ambient humidity 85%, Conditioning Temp 95°C for 90 seconds).</p>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Standard Carrier (Control)</th>
+                        <th>AquaConvertPlus™ (SILSEP)</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Enzyme Recovery (Post-Pelleting)</strong></td>
+                        <td>40%</td>
+                        <td>88%</td>
+                        <td><strong>+120%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>FCR (Mekong Delta Trial)</strong></td>
+                        <td>1.62</td>
+                        <td>1.45</td>
+                        <td><strong>-0.17</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Average Body Weight Gain (30 Days)</strong></td>
+                        <td>12.4g</td>
+                        <td>14.1g</td>
+                        <td><strong>+13.7%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>4. Conclusion & ROI</h2>
+            <p>By preventing the degradation of exogenous enzymes, AquaConvertPlus™ directly improves the FCR and growth performance of aquatic species. For a large-scale producer, this translates to millions of dollars in saved feed costs and faster production cycles.</p>
+        </section>
+
+        <div class="footer-note">
+            &copy; 2026 SILSEP Industries. All Rights Reserved. This technical document is for information purposes and based on controlled internal trials.
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
