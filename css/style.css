@@ -216,3 +216,18 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
   .hero.split .slide-content{grid-template-columns:1fr;gap:34px}
   .hero-visual{aspect-ratio:16/9}
 }
+
+
+/* ================= v4: full-bleed bright hero ================= */
+.hero{height:min(92vh,860px);min-height:600px}
+.slide-shade{background:linear-gradient(100deg,rgba(4,24,26,.58) 0%,rgba(4,24,26,.28) 48%,rgba(4,24,26,.06) 100%)}
+.slide-bg{filter:brightness(1.14) saturate(1.06)}
+.hero .slide-content h1{color:#fff}
+.hero .slide-content p{color:rgba(255,255,255,.88)}
+.hero .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-dots button{background:rgba(255,255,255,.38)}
+.hero-dots button.active{background:var(--amber)}
+.nav.on-dark:not(.scrolled){color:#fff}
+.nav.on-dark:not(.scrolled) .logo b{color:var(--teal-400)}
+.hero::after{content:"";display:block;background:linear-gradient(115deg,transparent 30%,rgba(44,195,180,.10) 46%,rgba(255,255,255,.08) 50%,rgba(44,195,180,.10) 54%,transparent 70%);background-size:240% 240%;animation:sheen 9s ease-in-out infinite;mix-blend-mode:screen}
