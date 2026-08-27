@@ -167,3 +167,31 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
   .nav-toggle{display:block;margin-left:auto;background:none;border:none;font-size:1.6rem;color:inherit;cursor:pointer}
   .inquiry .row{grid-template-columns:1fr}
 }
+
+/* ================= LIGHT THEME OVERRIDES ================= */
+.hero{background:#e9f3f2}
+.slide-shade{background:linear-gradient(100deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.78) 40%,rgba(255,255,255,.22) 72%,rgba(255,255,255,0) 100%)}
+.slide-bg{filter:brightness(1.14) saturate(1.05)}
+.hero::after{background:linear-gradient(115deg,transparent 30%,rgba(23,160,148,.07) 46%,rgba(255,255,255,.12) 50%,rgba(23,160,148,.07) 54%,transparent 70%);mix-blend-mode:normal}
+.slide-content h1{color:var(--ink)}
+.slide-content p{color:var(--ink-soft)}
+.hero .btn-ghost{border-color:var(--teal-700);color:var(--teal-800)}
+.hero .btn-ghost:hover{background:rgba(23,160,148,.08)}
+.hero-dots button{background:rgba(4,24,26,.18)}
+.hero-dots button.active{background:var(--amber)}
+.nav.on-dark:not(.scrolled){color:var(--ink)}
+.nav.on-dark:not(.scrolled) .logo b{color:var(--teal-500)}
+.stats{background:#fff;color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:58px 0}
+.stat b{color:var(--teal-500)}
+.stat span{color:var(--ink-soft)}
+.page-banner{background:linear-gradient(115deg,#e6f2f1,#fbfdfd);color:var(--ink);padding:150px 0 74px}
+.page-banner .bg{opacity:.16;filter:brightness(1.2)}
+.crumb{color:var(--ink-faint)}
+.crumb a:hover{color:var(--teal-500)}
+.page-banner p.lead{color:var(--ink-soft)}
+.inquiry{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);color:var(--ink)}
+.inquiry p{color:var(--ink-soft)}
+.inquiry input,.inquiry select,.inquiry textarea{background:var(--paper-soft);border:1px solid var(--line);color:var(--ink)}
+.inquiry input::placeholder,.inquiry textarea::placeholder{color:var(--ink-faint)}
+.inquiry input:focus,.inquiry select:focus,.inquiry textarea:focus{border-color:var(--teal-500);background:#fff}
+.inquiry a{color:var(--teal-500)!important}

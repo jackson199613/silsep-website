@@ -48,12 +48,12 @@
           for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
             const a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
             if(d<LINK*LINK){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);
-              ctx.strokeStyle=`rgba(120,220,208,${.14*(1-d/(LINK*LINK))})`;ctx.lineWidth=1;ctx.stroke()}}
+              ctx.strokeStyle=`rgba(17,72,76,${.13*(1-d/(LINK*LINK))})`;ctx.lineWidth=1;ctx.stroke()}}
           for(const p of pts){p.x+=p.vx;p.y+=p.vy;
             if(p.y<-6)p.y=H+6;if(p.x<-6)p.x=W+6;if(p.x>W+6)p.x=-6;
             ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);
-            ctx.shadowColor='rgba(120,230,215,.8)';ctx.shadowBlur=6;
-            ctx.fillStyle=`rgba(190,240,232,${p.a})`;ctx.fill();ctx.shadowBlur=0}
+            ctx.shadowColor='rgba(23,160,148,.55)';ctx.shadowBlur=6;
+            ctx.fillStyle=`rgba(17,120,112,${p.a*.8})`;ctx.fill();ctx.shadowBlur=0}
           requestAnimationFrame(draw)})();
       }
     }
