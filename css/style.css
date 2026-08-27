@@ -265,3 +265,13 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .btn-outline{border:1.5px solid var(--teal-700);color:var(--teal-800);background:#fff;padding:10px 22px;border-radius:999px;font-weight:600;font-size:.9rem;display:inline-block;transition:all .2s var(--spring)}
 .btn-outline:hover{background:var(--teal-700);color:#fff}
 .btn-outline:active{transform:scale(.97)}
+
+/* ================= Banner v3: full image, Lingwe-style ================= */
+.page-banner{background:var(--teal-900);color:#fff;padding:180px 0 100px}
+.page-banner .bg{opacity:1;filter:brightness(.95) saturate(1.02)}
+.page-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,24,26,.72) 0%,rgba(4,24,26,.38) 50%,rgba(4,24,26,.10) 100%)}
+.page-banner .container{z-index:3}
+.page-banner .crumb{color:rgba(255,255,255,.65)}
+.page-banner .crumb a:hover{color:#fff}
+.page-banner h1{color:#fff}
+.page-banner p.lead{color:rgba(255,255,255,.86)}
