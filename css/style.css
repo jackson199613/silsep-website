@@ -253,3 +253,15 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
   .showcase-stage{height:340px}
   .stage-info{left:24px;right:24px;bottom:24px}
 }
+
+/* ================= Product detail v2 (Lingwe-style) ================= */
+.app-chips{display:flex;flex-wrap:wrap;gap:12px;background:var(--paper-soft);border-radius:var(--radius);padding:26px}
+.app-chips span{border:1.5px solid var(--teal-500);color:var(--teal-700);border-radius:var(--radius-sm);padding:10px 18px;font-size:.9rem;font-weight:600;background:#fff}
+.principle{background:var(--paper-soft);border-left:4px solid var(--teal-500);border-radius:var(--radius-sm);padding:26px 30px;color:var(--ink-soft);max-width:850px}
+.model-card{border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin-bottom:22px;box-shadow:var(--shadow-sm);background:#fff}
+.model-card h3{color:var(--teal-500);font-size:1.25rem;margin-bottom:12px}
+.model-card p{color:var(--ink-soft);font-size:.95rem;max-width:100ch}
+.model-card .mc-actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{border:1.5px solid var(--teal-700);color:var(--teal-800);background:#fff;padding:10px 22px;border-radius:999px;font-weight:600;font-size:.9rem;display:inline-block;transition:all .2s var(--spring)}
+.btn-outline:hover{background:var(--teal-700);color:#fff}
+.btn-outline:active{transform:scale(.97)}
