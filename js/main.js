@@ -39,14 +39,21 @@
       const cv=document.getElementById('particles');
       if(cv){const ctx=cv.getContext('2d');let W,H,pts;
         const init=()=>{W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;
-          pts=Array.from({length:Math.min(46,W/28)},()=>({x:Math.random()*W,y:Math.random()*H,
-            r:Math.random()*2.2+.6,vx:(Math.random()-.5)*.18,vy:-Math.random()*.22-.05,a:Math.random()*.4+.15}))};
+          pts=Array.from({length:Math.min(70,W/16)},()=>({x:Math.random()*W,y:Math.random()*H,
+            r:Math.random()*2.6+.8,vx:(Math.random()-.5)*.25,vy:-Math.random()*.3-.06,a:Math.random()*.45+.2}))};
         init();addEventListener('resize',init);
+        const LINK=110;
         (function draw(){ctx.clearRect(0,0,W,H);
+          // connecting lines — molecular network effect
+          for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+            const a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
+            if(d<LINK*LINK){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);
+              ctx.strokeStyle=`rgba(120,220,208,${.14*(1-d/(LINK*LINK))})`;ctx.lineWidth=1;ctx.stroke()}}
           for(const p of pts){p.x+=p.vx;p.y+=p.vy;
             if(p.y<-6)p.y=H+6;if(p.x<-6)p.x=W+6;if(p.x>W+6)p.x=-6;
             ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);
-            ctx.fillStyle=`rgba(180,235,228,${p.a})`;ctx.fill()}
+            ctx.shadowColor='rgba(120,230,215,.8)';ctx.shadowBlur=6;
+            ctx.fillStyle=`rgba(190,240,232,${p.a})`;ctx.fill();ctx.shadowBlur=0}
           requestAnimationFrame(draw)})();
       }
     }
