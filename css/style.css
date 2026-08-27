@@ -231,3 +231,25 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .nav.on-dark:not(.scrolled){color:#fff}
 .nav.on-dark:not(.scrolled) .logo b{color:var(--teal-400)}
 .hero::after{content:"";display:block;background:linear-gradient(115deg,transparent 30%,rgba(44,195,180,.10) 46%,rgba(255,255,255,.08) 50%,rgba(44,195,180,.10) 54%,transparent 70%);background-size:240% 240%;animation:sheen 9s ease-in-out infinite;mix-blend-mode:screen}
+
+
+/* ================= Lingwe-style product showcase ================= */
+.showcase{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}
+.showcase-stage{position:relative;height:440px;overflow:hidden}
+.stage-img{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .7s ease,transform 8s linear;transform:scale(1.02)}
+.stage-img.active{opacity:1;transform:scale(1.08)}
+.stage-shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,24,26,.62) 0%,rgba(4,24,26,.25) 55%,rgba(4,24,26,.05) 100%)}
+.stage-info{position:absolute;left:48px;bottom:44px;right:48px;color:#fff;z-index:2}
+.stage-info h3{font-size:clamp(1.5rem,2.6vw,2.1rem);margin-bottom:10px}
+.stage-info p{max-width:52ch;color:rgba(255,255,255,.85);margin-bottom:20px}
+.showcase-tabs{display:grid;grid-template-columns:repeat(4,1fr);background:var(--teal-900)}
+.sc-tab{padding:22px 18px;background:transparent;border:none;border-right:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.85);font:inherit;font-size:.92rem;font-weight:600;cursor:pointer;text-align:left;transition:background .25s var(--spring),color .2s}
+.sc-tab:nth-child(4n){border-right:none}
+.sc-tab:hover{background:rgba(255,255,255,.07);color:#fff}
+.sc-tab.active{background:var(--amber);color:#231a02}
+@media (max-width:900px){
+  .showcase-tabs{grid-template-columns:repeat(2,1fr)}
+  .sc-tab:nth-child(2n){border-right:none}
+  .showcase-stage{height:340px}
+  .stage-info{left:24px;right:24px;bottom:24px}
+}
