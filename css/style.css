@@ -195,3 +195,24 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .inquiry input::placeholder,.inquiry textarea::placeholder{color:var(--ink-faint)}
 .inquiry input:focus,.inquiry select:focus,.inquiry textarea:focus{border-color:var(--teal-500);background:#fff}
 .inquiry a{color:var(--teal-500)!important}
+
+
+/* ================= SPLIT HERO v3 ================= */
+.hero.split{background:linear-gradient(135deg,#ffffff 0%,#f2f9f8 50%,#dceeeb 100%);height:auto;min-height:0;padding:150px 0 90px}
+.hero.split::after{display:none}
+.hero.split .slide{position:relative;inset:auto;display:none}
+.hero.split .slide.active{display:block}
+.hero.split .slide-content{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;height:auto;padding:0 24px}
+.hero.split .slide-text h1{color:var(--ink)}
+.hero.split .slide-text p{color:var(--ink-soft)}
+.hero-visual{border-radius:22px;overflow:hidden;box-shadow:0 28px 70px rgba(4,24,26,.28);aspect-ratio:16/10;transform:translateY(0)}
+.hero-visual img{width:100%;height:100%;object-fit:cover;filter:none;animation:vzoom 16s var(--spring) infinite alternate}
+@keyframes vzoom{from{transform:scale(1)}to{transform:scale(1.1)}}
+.slide.active .hero-visual{opacity:0;animation:rise .9s var(--spring) .35s forwards}
+.hero.split .hero-dots{position:static;transform:none;justify-content:center;margin-top:48px}
+.hero.split #particles{position:absolute;inset:0}
+@media (max-width:900px){
+  .hero.split{padding:120px 0 60px}
+  .hero.split .slide-content{grid-template-columns:1fr;gap:34px}
+  .hero-visual{aspect-ratio:16/9}
+}
