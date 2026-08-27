@@ -275,3 +275,8 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .page-banner .crumb a:hover{color:#fff}
 .page-banner h1{color:#fff}
 .page-banner p.lead{color:rgba(255,255,255,.86)}
+
+.showcase-tabs.three{grid-template-columns:repeat(3,1fr)}
+.showcase-tabs.three .sc-tab:nth-child(4n){border-right:1px solid rgba(255,255,255,.08)}
+.showcase-tabs.three .sc-tab:nth-child(3n){border-right:none}
+@media (max-width:900px){.showcase-tabs.three{grid-template-columns:1fr}.showcase-tabs.three .sc-tab{border-right:none}}
