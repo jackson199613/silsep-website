@@ -79,6 +79,13 @@
     document.querySelectorAll('.showcase').forEach(sc=>sc.classList.toggle('hidden',sc.id!==b.dataset.mode));
   }));
 
+  // Accordion
+  document.querySelectorAll('.acc-head').forEach(b=>b.addEventListener('click',()=>{
+    const it=b.parentElement,was=it.classList.contains('open');
+    document.querySelectorAll('.acc-item').forEach(x=>{x.classList.remove('open');x.querySelector('.acc-head span').textContent='+'});
+    if(!was){it.classList.add('open');b.querySelector('span').textContent='\u2212'}
+  }));
+
   // Solutions tabs
   const tabs=[...document.querySelectorAll('.tabs button')];
   tabs.forEach(b=>b.addEventListener('click',()=>{
