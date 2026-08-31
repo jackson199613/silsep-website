@@ -78,11 +78,20 @@
       <p>Tell us your system and target performance — a SILSEP specialist will recommend the right grade, share the TDS and arrange samples within one business day.</p></div>
       <form name="inquiry" method="POST" data-netlify="true" action="../thanks.html">
         <input type="hidden" name="form-name" value="inquiry">
-        <div class="row"><input name="name" placeholder="Your name" required><input name="company" placeholder="Company" required></div>
-        <div class="row"><input name="email" type="email" placeholder="Work email" required><input name="country" placeholder="Country"></div>
         <input type="hidden" name="interest" value="Silica Matting Agent (VS series)">
-        <textarea name="message" rows="4" placeholder="Your application, current product and target performance&hellip;"></textarea>
-        <button class="btn btn-amber" type="submit">Send Inquiry</button>
+        <div class="row">
+          <div><label class="f-label">Name <em>*</em></label><input name="name" required></div>
+          <div><label class="f-label">Company <em>*</em></label><input name="company" required></div>
+        </div>
+        <div class="row">
+          <div><label class="f-label">Work Email <em>*</em></label><input name="email" type="email" required></div>
+          <div><label class="f-label">Country / Region <em>*</em></label><input name="country" required></div>
+        </div>
+        <div><label class="f-label">Your Role</label><select name="role"><option value="">Select</option><option>Formulator / R&amp;D</option><option>Purchasing</option><option>Distributor / Importer</option><option>Feed Mill Management</option><option>Other</option></select></div>
+        <div><label class="f-label">What Do You Need <em>*</em></label><textarea name="message" rows="4" required placeholder="If you could tell us the product you are currently using, it would help us better match your grade."></textarea></div>
+        <label class="f-consent"><input type="checkbox" required> I agree that SILSEP may store and process the information above in order to respond to this enquiry, as described in the <a href="../privacy.html">privacy policy</a>. <em>*</em></label>
+        <button class="btn btn-amber" type="submit">Send Enquiry</button>
+        <p class="f-note">Fields marked <em>*</em> are required. We use these details only to respond to your enquiry and do not share them with third parties.</p>
       </form>
     </div>
   </div>

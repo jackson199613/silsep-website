@@ -356,3 +356,11 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .timeline li{position:relative;padding:0 0 26px 24px;color:var(--ink-soft)}
 .timeline li::before{content:"";position:absolute;left:-30px;top:7px;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--teal-500)}
 .timeline li b{display:block;color:var(--ink);font-size:1.05rem;margin-bottom:4px}
+
+/* form template */
+.f-label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+.f-label em,.f-consent em,.f-note em{color:#d64545;font-style:normal}
+.f-consent{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--ink-soft);cursor:pointer}
+.f-consent input{width:auto;margin-top:3px;accent-color:var(--teal-500)}
+.f-consent a{color:var(--teal-500);font-weight:600;text-decoration:underline}
+.f-note{font-size:.8rem;color:var(--ink-faint)}
