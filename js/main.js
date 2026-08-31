@@ -1,5 +1,24 @@
 // SILSEP — shared interactions
 (function(){
+  // Page transition overlay
+  const pt=document.getElementById('pt');
+  if(pt){
+    const hide=()=>pt.classList.add('hide');
+    window.addEventListener('pageshow',()=>setTimeout(hide,420));
+    document.addEventListener('click',e=>{
+      const a=e.target.closest('a');if(!a)return;
+      const href=a.getAttribute('href');
+      if(!href||href.startsWith('#')||href.startsWith('mailto:')||href.startsWith('tel:'))return;
+      if(a.target==='_blank'||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+      if(/^https?:/i.test(href)&&!href.includes(location.host))return;
+      if(href.includes('#')&&href.split('#')[0]===location.pathname.split('/').pop())return;
+      e.preventDefault();
+      pt.querySelector('.pt-bar').style.animation='none';
+      pt.classList.remove('hide');
+      setTimeout(()=>{location.href=href},430);
+    });
+  }
+
   const nav=document.querySelector('.nav');
   const onScroll=()=>nav.classList.toggle('scrolled',scrollY>24);
   onScroll();addEventListener('scroll',onScroll,{passive:true});
