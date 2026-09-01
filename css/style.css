@@ -389,3 +389,14 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 @keyframes waIn{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
 @media (max-width:600px){.wa-float{right:16px;bottom:16px;width:52px;height:52px}.wa-tip{display:none}}
 @media (prefers-reduced-motion:reduce){.wa-float{animation:none}}
+
+/* testimonials */
+.tm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px}
+.tm-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .25s var(--spring),box-shadow .25s var(--spring)}
+.tm-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.tm-img{height:150px;background-size:cover;background-position:center}
+.tm-body{padding:26px 28px 24px;display:flex;flex-direction:column;flex:1}
+.tm-quote{color:var(--ink-soft);font-size:.95rem;line-height:1.65;flex:1;position:relative}
+.tm-sign{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.tm-sign b{display:block;font-size:.95rem;color:var(--ink)}
+.tm-sign span{font-size:.85rem;color:var(--ink-faint)}
