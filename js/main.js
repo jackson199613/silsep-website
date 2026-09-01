@@ -1,5 +1,15 @@
 // SILSEP — shared interactions
 (function(){
+  // GA4: track WhatsApp clicks + form submits
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[href*="wa.me"]');
+    if(a&&typeof gtag==='function')gtag('event','whatsapp_click',{page_path:location.pathname});
+  });
+  document.addEventListener('submit',e=>{
+    if(e.target&&e.target.name==='inquiry'&&typeof gtag==='function')
+      gtag('event','form_submit',{form_page:location.pathname,interest:(e.target.querySelector('[name=interest]')||{}).value||''});
+  });
+
   // Page transition overlay
   const pt=document.getElementById('pt');
   if(pt){
