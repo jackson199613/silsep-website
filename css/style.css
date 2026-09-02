@@ -419,3 +419,13 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .ex-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .ex-thumb figcaption{padding:14px 16px;font-size:.85rem;color:var(--ink-soft);line-height:1.45}
 @media (max-width:700px){.ex-nav{grid-template-columns:repeat(2,1fr)}}
+
+/* mega dropdown */
+.dropdown.mega{display:grid;grid-template-columns:repeat(3,minmax(190px,1fr));gap:8px 26px;padding:22px 26px;min-width:660px;left:auto;right:-140px;transform:translate(0,8px)}
+.nav-links div:hover .dropdown.mega,.nav-links div:focus-within .dropdown.mega{transform:translate(0,0)}
+.mega-col{display:flex;flex-direction:column}
+.mega-col .dd-label{padding:0 0 10px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.mega-col a{padding:8px 10px;font-size:.9rem;border-radius:var(--radius-sm)}
+.mega-col .dd-more{margin-top:6px;font-weight:600;color:var(--teal-500)}
+@media (max-width:1100px){.nav-links{gap:22px;font-size:.9rem}}
+@media (max-width:900px){.dropdown.mega{grid-template-columns:1fr;min-width:0;right:auto;padding:8px 0 0 14px;gap:0}.mega-col .dd-label{border:none;padding-top:10px}}
