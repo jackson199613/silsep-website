@@ -19,3 +19,6 @@
 
 ## Contact
 - Enquiries: https://silsep.com/contact/ (reply within one business day)
+
+## Full reference
+- [Complete product and company reference](https://silsep.com/llms-full.txt)

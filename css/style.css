@@ -441,3 +441,4 @@ footer{background:var(--teal-950);color:rgba(255,255,255,.72);padding:70px 0 34p
 .film-wrap:hover .film-play{transform:translate(-50%,-50%) scale(1.08);background:#fff}
 .film-dur{position:absolute;left:22px;bottom:20px;color:rgba(255,255,255,.9);font-size:.82rem;letter-spacing:.05em;font-weight:500;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 @media (max-width:640px){.film-play{width:64px;height:64px}}
+.last-updated{color:var(--ink-faint);font-size:.82rem;margin:34px 0 0;padding-top:18px;border-top:1px solid var(--line)}

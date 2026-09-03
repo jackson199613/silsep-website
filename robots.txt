@@ -25,3 +25,7 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://silsep.com/sitemap.xml
+
+# AI reference files
+# https://silsep.com/llms.txt
+# https://silsep.com/llms-full.txt
