@@ -114,5 +114,6 @@ https://silsep.com/technology/               Technology
 https://silsep.com/sustainability/           Sustainability
 https://silsep.com/news/                     Technical insights
 https://silsep.com/news/palatant-stability-tropical-storage/   Palatant stability in tropical storage: mechanisms, 180-day benchmark, self-run test protocol
+https://silsep.com/news/what-survives-85c-pelleting/               Feed sweetener selection for 85°C conditioning: thermal load, carrier economics, particle count, retention test
 https://silsep.com/downloads/                Document downloads
 https://silsep.com/contact/                  Contact

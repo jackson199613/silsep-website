@@ -20,6 +20,8 @@
 ## Technical insights
 - [How Long Does a Feed Palatant Actually Last in Tropical Storage?](https://silsep.com/news/palatant-stability-tropical-storage/): degradation routes, Q10 arithmetic, water-activity thresholds, how to read a stability claim, and a self-run accelerated storage protocol.
 
+- [What Actually Survives 85°C Conditioning? A Feed Sweetener Selection Guide](https://silsep.com/news/what-survives-85c-pelleting/): thermal load vs temperature, carrier cost, particle count as a specification, mill-floor retention test.
+
 ## Contact
 - Enquiries: https://silsep.com/contact/ (reply within one business day)
 
