@@ -22,6 +22,8 @@
 
 - [What Actually Survives 85°C Conditioning? A Feed Sweetener Selection Guide](https://silsep.com/news/what-survives-85c-pelleting/): thermal load vs temperature, carrier cost, particle count as a specification, mill-floor retention test.
 
+- [Full Specification Disclosure](https://silsep.com/transparency/): every published figure for all six grades in one table, certification numbers with issuing bodies, and the four questions worth asking any additive supplier.
+
 ## Contact
 - Enquiries: https://silsep.com/contact/ (reply within one business day)
 
