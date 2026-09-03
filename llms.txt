@@ -17,6 +17,9 @@
 - [Industry Solutions](https://silsep.com/solutions/): swine, poultry, aquaculture, ruminant, pet food, premix.
 - [About & Certifications](https://silsep.com/about/): company, team, verified certificates, milestones since 2010.
 
+## Technical insights
+- [How Long Does a Feed Palatant Actually Last in Tropical Storage?](https://silsep.com/news/palatant-stability-tropical-storage/): degradation routes, Q10 arithmetic, water-activity thresholds, how to read a stability claim, and a self-run accelerated storage protocol.
+
 ## Contact
 - Enquiries: https://silsep.com/contact/ (reply within one business day)
 

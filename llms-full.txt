@@ -113,5 +113,6 @@ https://silsep.com/about/                    Company, certifications, milestones
 https://silsep.com/technology/               Technology
 https://silsep.com/sustainability/           Sustainability
 https://silsep.com/news/                     Technical insights
+https://silsep.com/news/palatant-stability-tropical-storage/   Palatant stability in tropical storage: mechanisms, 180-day benchmark, self-run test protocol
 https://silsep.com/downloads/                Document downloads
 https://silsep.com/contact/                  Contact
