@@ -115,6 +115,21 @@
     if(!was){it.classList.add('open');b.querySelector('span').textContent='\u2212'}
   }));
 
+
+  // Company film — click to load (keeps About page light)
+  const fw=document.getElementById('filmWrap');
+  if(fw){
+    fw.addEventListener('click',()=>{
+      if(fw.classList.contains('playing'))return;
+      const v=document.createElement('video');
+      v.src='video/silsep-film.mp4';v.controls=true;v.autoplay=true;v.playsInline=true;v.muted=false;
+      v.setAttribute('poster','video/poster.jpg');
+      fw.querySelector('img').replaceWith(v);
+      fw.classList.add('playing');
+      if(typeof gtag==='function')gtag('event','video_play',{page_path:location.pathname});
+    });
+  }
+
   // Solutions tabs
   const tabs=[...document.querySelectorAll('.tabs button')];
   tabs.forEach(b=>b.addEventListener('click',()=>{
