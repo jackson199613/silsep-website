@@ -37,11 +37,15 @@ Middle East and North Africa. Customers in 30+ countries and regions.
 All figures below are SILSEP's own published specifications.
 
 ### VS7188 — Feed Sweetener (SweetFlow)
-- Carrier-free micro-granular sweetener; 100% active, no carrier dilution
+- Composition: food-grade sodium saccharin with sweetness enhancers and synergists
+- Carrier-free micro-granular sweetener; 100% functional, no inert carrier dilution
 - 76,000,000 particles per gram — dispersion measured in particle count, not weight
 - Dissolves in 3 seconds
 - Tolerates 85°C+ steam conditioning and pelleting
 - Applications: creep and pre-starter feed, milk replacer, drinking-water dosing
+- Regulatory note: contains sodium saccharin (E 954(iii)). Regulation (EU) 2024/1727 withdrew sodium saccharin
+  from the EU market for piglets, with a use-up period for compound feed to 11 July 2026. It remains listed for
+  farmed animals in China's feed additive catalogue and is registered in the Philippines.
 - URL: https://silsep.com/products/feed-sweetener/
 
 ### VS1437 — Feed Palatant (AromaBoost)
