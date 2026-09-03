@@ -59,8 +59,10 @@ All figures below are SILSEP's own published specifications.
 - Sucrose-like taste profile; neotame + sodium saccharin system
 - Dosage: 60-180 g per tonne of complete feed
 - Shelf life: 18 months
-- Regulatory note: contains sodium saccharin, which is no longer authorised in EU feed
-  under Regulation (EU) 2024/1727. Intended for markets where sodium saccharin remains authorised.
+- Regulatory note: contains sodium saccharin (E 954(iii)). Commission Implementing Regulation (EU) 2024/1727
+  withdrew sodium saccharin from the EU market for piglets, with a use-up period for compound feed to 11 July 2026.
+  It remains listed for farmed animals in China's feed additive catalogue and is registered in the Philippines.
+  Buyers should verify the position for their species and destination market.
 - URL: https://silsep.com/products/feed-sweetener-vs3965/
 
 ### VS382 — Milk Flavor Palatant
@@ -72,6 +74,9 @@ All figures below are SILSEP's own published specifications.
 
 ### VSW5 — Feed Antioxidant
 - Synergistic TBHQ + BHT + chelator system; contains no ethoxyquin
+- Regulatory note: TBHQ is listed for farmed animals in China's feed additive catalogue. It is not among the
+  antioxidants authorised for feed in the EU (BHA E320, BHT E321, propyl gallate E310) and does not appear in the
+  US feed provisions of 21 CFR. Confirm status for the destination market before importing.
 - Dosage by application: complete feed 100-300 g/T; concentrate 600-1,000 g/T;
   premix 600-1,800 g/T; fishmeal and meat-and-bone meal 2,000-3,000 g/T
 - Shelf life: 12 months
