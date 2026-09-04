@@ -9,7 +9,7 @@ const KEY  = 'd1972ae8bf034450935d87601f5b74a9';
 
 const toUrl = f =>
   'https://' + HOST + '/' + (f.endsWith('index.html') ? f.slice(0, -'index.html'.length)
-                                                      : f.replace(/\.html$/, '/'));
+                                                      : f.replace(/\.html$/, ''));
 
 function changedFiles() {
   try {

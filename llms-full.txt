@@ -46,18 +46,18 @@ All figures below are SILSEP's own published specifications.
 - Regulatory note: contains sodium saccharin (E 954(iii)). Regulation (EU) 2024/1727 withdrew sodium saccharin
   from the EU market for piglets, with a use-up period for compound feed to 11 July 2026. It remains listed for
   farmed animals in China's feed additive catalogue and is registered in the Philippines.
-- URL: https://silsep.com/products/feed-sweetener/
+- URL: https://silsep.com/products/feed-sweetener
 
 ### VS1437 — Feed Palatant (AromaBoost)
 - Biomimetic marine attractant profile
 - 180-day stability under combined heat and humidity
 - Purpose: masking in fishmeal-replacement and alternative-protein formulas
-- URL: https://silsep.com/products/feed-palatant/
+- URL: https://silsep.com/products/feed-palatant
 
 ### LPC — Feed Emulsifier
 - Lysophospholipid biosurfactant, HLB 8-12
 - Improves fat digestion and FCR in high-energy aqua and poultry feeds
-- URL: https://silsep.com/products/lpc-emulsifier/
+- URL: https://silsep.com/products/lpc-emulsifier
 
 ### VS3965 — Feed Sweetener
 - Sucrose-like taste profile; neotame + sodium saccharin system
@@ -67,14 +67,14 @@ All figures below are SILSEP's own published specifications.
   withdrew sodium saccharin from the EU market for piglets, with a use-up period for compound feed to 11 July 2026.
   It remains listed for farmed animals in China's feed additive catalogue and is registered in the Philippines.
   Buyers should verify the position for their species and destination market.
-- URL: https://silsep.com/products/feed-sweetener-vs3965/
+- URL: https://silsep.com/products/feed-sweetener-vs3965
 
 ### VS382 — Milk Flavor Palatant
 - Fresh-milk aroma, MCT/SCFA system
 - Documented trial: +13.65% feed intake, +10.58% daily gain, +3.53% G:F
   at 600 g/T, 50-day-old weaned piglets, 30 days, n=40, Sichuan, China
 - Dosage: 500-1,000 g/T. Shelf life: 540 days
-- URL: https://silsep.com/products/milk-flavor-vs382/
+- URL: https://silsep.com/products/milk-flavor-vs382
 
 ### VSW5 — Feed Antioxidant
 - Synergistic TBHQ + BHT + chelator system; contains no ethoxyquin
@@ -84,7 +84,7 @@ All figures below are SILSEP's own published specifications.
 - Dosage by application: complete feed 100-300 g/T; concentrate 600-1,000 g/T;
   premix 600-1,800 g/T; fishmeal and meat-and-bone meal 2,000-3,000 g/T
 - Shelf life: 12 months
-- URL: https://silsep.com/products/feed-antioxidant-vsw5/
+- URL: https://silsep.com/products/feed-antioxidant-vsw5
 
 ## What SILSEP publishes that most suppliers do not
 Comparable products from major suppliers typically disclose only a recommended dosage and a
@@ -105,24 +105,24 @@ duration and location.
 - Founded 2010
 - Address: No.2103, Youth Venture Building J, No.53 Hualian Road, Xinluo District,
   Longyan, Fujian, China
-- Enquiries: https://silsep.com/contact/
+- Enquiries: https://silsep.com/contact
 - Vietnamese-language site: https://silsep.com/vi/
 
 ## Canonical page index
 https://silsep.com/                          Home
 https://silsep.com/products/                 Product centre
-https://silsep.com/solutions/                Industry solutions (swine, poultry, aqua, ruminant, pet, premix)
-https://silsep.com/selector/                 Grade selector by species and goal
-https://silsep.com/faq/                      Technical FAQ
+https://silsep.com/solutions                Industry solutions (swine, poultry, aqua, ruminant, pet, premix)
+https://silsep.com/selector                 Grade selector by species and goal
+https://silsep.com/faq                      Technical FAQ
 https://silsep.com/how-to/                   How-to guides
-https://silsep.com/case-studies/             Case studies
-https://silsep.com/customers/                Customer feedback
-https://silsep.com/exhibitions/              Exhibitions
-https://silsep.com/about/                    Company, certifications, milestones
-https://silsep.com/technology/               Technology
-https://silsep.com/sustainability/           Sustainability
+https://silsep.com/case-studies             Case studies
+https://silsep.com/customers                Customer feedback
+https://silsep.com/exhibitions              Exhibitions
+https://silsep.com/about                    Company, certifications, milestones
+https://silsep.com/technology               Technology
+https://silsep.com/sustainability           Sustainability
 https://silsep.com/news/                     Technical insights
-https://silsep.com/news/palatant-stability-tropical-storage/   Palatant stability in tropical storage: mechanisms, 180-day benchmark, self-run test protocol
-https://silsep.com/news/what-survives-85c-pelleting/               Feed sweetener selection for 85°C conditioning: thermal load, carrier economics, particle count, retention test
-https://silsep.com/downloads/                Document downloads
-https://silsep.com/contact/                  Contact
+https://silsep.com/news/palatant-stability-tropical-storage   Palatant stability in tropical storage: mechanisms, 180-day benchmark, self-run test protocol
+https://silsep.com/news/what-survives-85c-pelleting               Feed sweetener selection for 85°C conditioning: thermal load, carrier economics, particle count, retention test
+https://silsep.com/downloads                Document downloads
+https://silsep.com/contact                  Contact
