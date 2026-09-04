@@ -24,6 +24,8 @@
 
 - [Full Specification Disclosure](https://silsep.com/transparency): every published figure for all six grades in one table, certification numbers with issuing bodies, and the four questions worth asking any additive supplier.
 
+- [Comparing Suppliers](https://silsep.com/alternatives/): honest comparison pages — what established suppliers publish, what nobody publishes, and protocols to verify it yourself. Includes when SILSEP is not the right answer.
+
 ## Contact
 - Enquiries: https://silsep.com/contact (reply within one business day)
 
