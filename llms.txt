@@ -26,6 +26,8 @@
 
 - [Comparing Suppliers](https://silsep.com/alternatives/): honest comparison pages — what established suppliers publish, what nobody publishes, and protocols to verify it yourself. Includes when SILSEP is not the right answer.
 
+- [Compliance & Regulatory Position](https://silsep.com/compliance): substance-level position by market for sodium saccharin, TBHQ and ethoxyquin, with primary instruments linked; certificate scopes; and an explicit list of what SILSEP does not claim (no REACH, no EFSA, no patents).
+
 ## Contact
 - Enquiries: https://silsep.com/contact (reply within one business day)
 
